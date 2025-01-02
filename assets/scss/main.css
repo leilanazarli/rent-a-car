@@ -1,0 +1,340 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer {
+  padding: 150px 0;
+}
+footer .container a {
+  color: white;
+}
+footer .container .row .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .container .row .footer-left span {
+  font-size: 35px;
+  color: #bfa37c;
+}
+footer .container .row .footer-com, footer .container .row .footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .container .row .footer-com h1, footer .container .row .footer-right h1 {
+  font-weight: 900;
+  color: #bfa37c;
+}
+footer .container .row .fa-brands {
+  padding-right: 10px;
+}
+
+.home header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+.home header .header-top {
+  padding: 20px 0;
+  position: relative;
+}
+.home header .header-top::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  z-index: 4;
+  bottom: 5px;
+}
+.home header .header-top .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home header .header-top .container .header-top-left span {
+  font-size: 30px;
+  color: white;
+}
+.home header .header-top .container .header-top-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.home header .header-top .container .header-top-right a {
+  color: white;
+}
+.home header .header-top .container .header-top-right a i {
+  padding-right: 10px;
+}
+.home header .header-top .container .header-top-right .line {
+  color: rgb(235, 233, 233);
+  font-size: 30px;
+}
+.home header .header-bottom {
+  padding: 20px 0;
+}
+.home header .header-bottom .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.home header .header-bottom .container .header-bottom-left nav ul {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+.home header .header-bottom .container .header-bottom-left nav ul li a {
+  color: white;
+  text-transform: uppercase;
+}
+.home header .header-bottom .container .header-bottom-right a {
+  color: white;
+}
+
+.home {
+  background-color: rgb(11, 19, 21);
+}
+.home .home-section1 .carousel img {
+  height: 720px;
+}
+.home .home-section1 .carousel .carousel-caption {
+  top: 50%;
+  left: 40px;
+  text-align: left;
+}
+.home .home-section1 .carousel .carousel-caption h5 {
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+.home .home-section1 .carousel .carousel-caption p {
+  font-size: 30px;
+  font-style: italic;
+}
+.home .home-section3 {
+  padding: 80px 0;
+}
+.home .home-section3 .container {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.home .home-section3 .container .section3-title {
+  padding: 50px 0;
+}
+.home .home-section3 .container .section3-title h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+  padding-bottom: 20px;
+}
+.home .home-section3 .container .section3-title span {
+  color: #bfa37c;
+  font-size: 25px;
+}
+.home .home-section3 .container .row {
+  padding: 20px 50px;
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.home .home-section3 .container .row .card-1, .home .home-section3 .container .row .card-2, .home .home-section3 .container .row .card-3, .home .home-section3 .container .row .card-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .home-section3 .container .row .card-1 .card-img img, .home .home-section3 .container .row .card-2 .card-img img, .home .home-section3 .container .row .card-3 .card-img img, .home .home-section3 .container .row .card-4 .card-img img {
+  height: 120px;
+}
+.home .home-section3 .container .row .card-1 .card-left .card-title, .home .home-section3 .container .row .card-2 .card-left .card-title, .home .home-section3 .container .row .card-3 .card-left .card-title, .home .home-section3 .container .row .card-4 .card-left .card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.home .home-section3 .container .row .card-1 .card-left .card-title h1, .home .home-section3 .container .row .card-2 .card-left .card-title h1, .home .home-section3 .container .row .card-3 .card-left .card-title h1, .home .home-section3 .container .row .card-4 .card-left .card-title h1 {
+  color: white;
+  font-size: 40px;
+}
+.home .home-section3 .container .row .card-1 .card-left .card-title h2, .home .home-section3 .container .row .card-2 .card-left .card-title h2, .home .home-section3 .container .row .card-3 .card-left .card-title h2, .home .home-section3 .container .row .card-4 .card-left .card-title h2 {
+  color: #bfa37c;
+  font-size: 25px;
+}
+.home .home-section3 .container .row .card-1 .card-left .card-title p, .home .home-section3 .container .row .card-2 .card-left .card-title p, .home .home-section3 .container .row .card-3 .card-left .card-title p, .home .home-section3 .container .row .card-4 .card-left .card-title p {
+  color: #ebaf5c;
+}
+.home .home-section3 .container .row .card-1 .card-right, .home .home-section3 .container .row .card-2 .card-right, .home .home-section3 .container .row .card-3 .card-right, .home .home-section3 .container .row .card-4 .card-right {
+  padding-top: 10px;
+}
+.home .home-section3 .container .row .card-1 .card-right button, .home .home-section3 .container .row .card-2 .card-right button, .home .home-section3 .container .row .card-3 .card-right button, .home .home-section3 .container .row .card-4 .card-right button {
+  background-color: transparent;
+  padding: 18px 15px;
+  border-color: #bfa37c;
+  color: white;
+}
+.home .home-section4 .container .section4-top .section4-img img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+.home .home-section4 .container .section4-bottom {
+  padding: 50px 0;
+}
+.home .home-section4 .container .section4-bottom .row .col-4 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.home .home-section4 .container .section4-bottom .row .col-4 .card1-text a, .home .home-section4 .container .section4-bottom .row .col-4 .card2-text a, .home .home-section4 .container .section4-bottom .row .col-4 .card3-text a {
+  color: white;
+}
+.home .home-section4 .container .section4-bottom .row .col-4 .card1-text a span, .home .home-section4 .container .section4-bottom .row .col-4 .card2-text a span, .home .home-section4 .container .section4-bottom .row .col-4 .card3-text a span {
+  padding-top: 20px;
+  color: white;
+}
+.home hr {
+  width: 100%;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+footer{
+padding: 150px 0;
+.container{
+        // height: 550px;
+        // display: flex;
+        // gap: 30px;
+        // justify-content: space-between;
+        // align-items: center;
+        a{
+            color: white;
+        }
+        .row{
+            .footer-left{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                span{
+                    font-size: 35px;
+                    color: #bfa37c;
+                }
+            }
+            .footer-com ,.footer-right{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                h1{
+                    font-weight: 900;
+                    color: #bfa37c;
+                }
+            }
+            .fa-brands{
+                padding-right:10px ;
+            }
+        }
+        
+    }
+}
