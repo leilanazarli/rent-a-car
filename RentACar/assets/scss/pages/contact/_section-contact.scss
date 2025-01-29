@@ -1,0 +1,38 @@
+.contact{
+background-color: rgb(11, 19, 21);
+    .contact-section1{
+    padding-top:200px ;
+    background-image: url("../img/contact car.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+        .container{
+        display: flex;
+        justify-content: center;
+                align-items: center;
+        // justify-content: space-between;
+            // .contact-section1-left{
+            // width: 50%; 
+            form{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                width: 450px;
+                display: flex;
+                textarea{
+                    width: 450px;
+                    background-color: white;
+                }
+            }
+            // }
+            // .contact-section1-right{
+            //     img{
+            //     width: 550px;
+            //     height: 450px;
+            //     }
+            // }
+        }
+    }
+}
