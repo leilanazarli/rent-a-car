@@ -18,7 +18,7 @@ function createfav() {
              <div class="card col-4">
                     <div class="card-img">
                       <a href=""><img src="${element.car_imgvalue}" class="car-img" ></a>
-                      <p class="cars-years">2020</p>
+                      <p class="cars-years">${element.car_years}</p>
                     </div> 
                     <div class="card-body">
                       <div class="card-title">

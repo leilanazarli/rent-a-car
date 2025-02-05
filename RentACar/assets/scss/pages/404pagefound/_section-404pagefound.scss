@@ -1,0 +1,48 @@
+$bg-color: black;
+$text-color: white;
+$accent-color: red;
+$button-hover: darkred;
+
+.pagefound{
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    img{
+        width: 500px;
+        height: 45%;
+    }
+    h1 {
+        font-size: 80px;
+        margin: 0;
+        color: $accent-color;
+    }
+    
+    p {
+        font-size: 20px;
+        color: #ccc;
+    }
+    
+    .home-button {
+        background-color: $accent-color;
+        color: $text-color;
+        padding: 12px 24px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        
+        &:hover {
+            background-color: $button-hover;
+        }
+    }
+}
+

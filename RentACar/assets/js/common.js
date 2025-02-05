@@ -18,8 +18,10 @@ function scrollFunction(){
          logo.style.display="none"
     }
 }
-window.onscroll = function () { scrollFunction() };
-
+// window.onscroll = function () { scrollFunction() };
+//     if (window.location.pathname === "/adminpanel.html" ) {
+//         window.location.href = "/404pagefound.html"; // 404 səhifəsinə yönləndir
+//     }
 // document.addEventListener('keydown', function(event) {
 //     // F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
 //     if (
