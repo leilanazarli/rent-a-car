@@ -1,0 +1,120 @@
+.favorites{
+    background-color: rgb(11, 19, 21);
+    .favorites-section1{
+      // height: 700px;
+      padding: 150px 0;
+      .favorites-text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+        p{
+          font-size: 45px;
+          color: white;
+          }
+          a{
+          
+          font-size: 30px;
+            color: red;
+            i{
+            transition: .1s;
+             &:hover{
+              padding-left  :20px ;
+             }
+            }
+          }
+      }
+      .row{
+        .card{
+            overflow: hidden;
+            padding: 0;
+            background-color: rgb(34, 33, 33);
+            .card-img {
+            object-fit: cover;
+            position: relative;
+            overflow: hidden;
+            &:hover .car-img {
+                transform: scale(1.1);
+                z-index: 2;
+            }
+            .car-img {
+                transition: transform 0.3s ease, z-index 0s;
+                z-index: 1;
+                height: 350px;
+                width: 100%;
+            
+               
+                }
+                .cars-years {
+                    position: absolute;
+                  top: 10px;
+                  left: 10px;
+                  background-color: rgba(147, 142, 142, 0.5);
+                  color: black;
+                  padding: 5px 10px;
+                  border-radius: 55px;
+                }
+                
+                #heart {
+                  position: absolute;
+                  top: 10px;
+                  right: 10px;
+    
+                }
+                
+        }
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+          .card-title{
+                a{
+                    color: white;
+                    font-size: 25px;
+                }
+          }
+           .card-cars-about{
+                  .col-3 {
+                    display: flex;
+                    width: auto;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    background-color: rgba(147, 142, 142, 0.5);
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius: 55px;
+                    margin-right: 10px;
+                    img {
+                      width: 20px; /* Şəklin ölçüsünü burada tənzimləyə bilərsiniz */
+                      height: auto;
+                     
+                    //   margin-right: 5px; 
+                    }
+                     span {
+                      font-size: 14px; 
+                      color: black;/* Span yazısının ölçüsünü də burada tənzimləyə bilərsiniz */
+                    }
+                }
+            }
+            .card-cars-price{
+                padding-top: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    color: white;
+                        span{
+                            font-size: 25px;
+                        }
+                }
+                 
+              }
+        }
+        
+    
+    } 
+      }
+    }
+}

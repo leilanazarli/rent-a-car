@@ -1,4 +1,3 @@
-.home{
     header{
     width: 100%;
     position: fixed;
@@ -62,17 +61,19 @@
                             a{
                                 color: white;
                                text-transform: uppercase;
+                            // font-family: 'Times New Roman', Times, serif;
+                               
+                               &:hover {
+                                color: red;
+                               }
                             }
                             }
                         }                        
                      }
                     }
-                    .header-bottom-right{
-                        a{
-                        color: white;
-                        }
-                    }
+                    // @import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+                  
+
                 }
        }
     }
-}

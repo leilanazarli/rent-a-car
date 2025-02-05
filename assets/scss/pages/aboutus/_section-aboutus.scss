@@ -1,0 +1,26 @@
+.aboutus{
+background-color: rgb(11, 19, 21);
+height:max-content;
+    .aboutus-section1{
+        padding-top: 150px ;
+        height: 550px   ;
+        display: flex;
+        // justify-content: center;
+        .container{
+            display: flex;
+        align-items: center;
+            .logo{
+                img{
+                    width: 200px;
+                }
+            }
+            p{
+                color: white;
+                font-size: 20px;
+                font-family:'Times New Roman', Times, serif;
+                line-height: 30px;
+                }
+        }
+    }
+
+}

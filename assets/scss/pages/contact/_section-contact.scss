@@ -1,0 +1,102 @@
+.contact{
+background-color: rgb(11, 19, 21);
+        .contact-section1{
+            padding-top: 100px;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .contact-section2{
+            width: 100%;  
+            iframe{
+                width: 100%;  
+            
+            }
+        }
+    .contact-section3{
+    padding-top:80px ;
+    background-color: #0b1315;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+        .container{
+        display: flex;
+        justify-content: center;
+                align-items: center;
+        // justify-content: space-between;
+            // .contact-section1-left{
+            // width: 50%; 
+            form{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                width: 450px;
+                display: flex;
+                h1{
+                    color: white;
+                    font-size: 45px;
+                    text-align: center;
+                    // text-transform:;
+                }
+                textarea{
+                    width: 450px;
+                    background-color: white;
+                }
+            }
+            // }
+            // .contact-section1-right{
+            //     img{
+            //     width: 550px;
+            //     height: 450px;
+            //     }
+            // }
+        }
+    }
+    .contact-section4{
+        
+            background-color: #0b1315;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            .left {
+            width: 50%;
+                display: flex;
+                gap: 20px;
+                .img1 {
+                    width: 350px;
+                }
+                .img2{
+                    width: 300px;
+                }
+            }
+            .right {
+                width: 50%;
+                h2 {
+                    font-size: 45px;
+                    font-weight: 400;
+                }
+                 p {
+                    font-size: 30px;
+                    margin: 10px 0;
+                    font-style: italic;
+                    font-weight: 100;
+                    // text-decoration: double;
+                }
+                .btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    margin-top: 30px;
+                    // background: red;
+                    // color: black;
+                    text-decoration: none;
+                    font-weight: bold;
+                    border-radius: 5px;
+                }
+            }
+    }
+}

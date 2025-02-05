@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/scss/main.css">
     <title>MamedovRentACar</title>
@@ -18,68 +21,65 @@
             <div class="header-top">
                 <div class="container">
                     <div class="header-top-left logo">
-                    <!-- <img src="./assets/img/logo.jpeg" alt="logo"> -->
-                    <span>MamedovDrive</span>
+                    <span>MamedovRentaCar</span>
                     </div>
                     <div class="header-top-right">
                         <a href="tel:+994 055 296 54 50"><i class="fa-solid fa-phone"></i><span >+994 055 296 54 50</span></a>
                         <span class="line">|</span>
                         <a href="https://maps.app.goo.gl/BiraJu8YX1WmkHM56"><i class="fa-solid fa-location-dot"></i><span>Gəncə şəhər Fərhad Əliyev küçəsi </span></a>
-                        <a href=""><i class="fa-solid fa-user"></i></a>
+                        <a href="./login.html"><i class="fa-solid fa-user"></i></a>
                     </div>
                 </div>
             </div>
             <div class="header-bottom">
              <div class="container">
               <div class=" logos" style="font-size: 30px; color: white;display: none;">
-                <!-- <img src="./assets/img/logo.jpeg" alt="logo"> -->
-                <span>MamedovDrive</span>
+                <span>MamedovRentaCar</span>
                 </div>
                  <div class="header-bottom-left">
                    <nav>
                     <ul>
-                        <li><a href="./home.html">əsas səhifə</a></li>
+                        <li><a href="./home.html" style="color: red;">əsas səhifə</a></li>
+                        <li><a href="./cars.html">Maşınlar</a></li>
+                        <li><a href="./favorites.html">Favorilər</a></li>
                         <li><a href="./service.html">Xidmətlər</a></li>
                         <li><a href="./aboutus.html">Haqqımızda</a></li>
-                        <li><a href="./partners.html">partnerlər</a></li>
                         <li><a href="./contact.html">əlaqə</a></li>
                     </ul>
                    </nav>
                  </div>
-                <div class="header-bottom-right">
-                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                </div>
              </div>
             </div>
         </header>
         <section class="home-section1">
-           
               <div id="carouselExampleDark" class="carousel  slide" data-bs-ride="carousel">
-                <!-- <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div> -->
+             
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
                     <img src="./assets/img/home img 1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Lüks Avtomobil icarəyə götürmək istəyirsən? </h5>
-                      <p>O zaman doğru məkandasan.</p>
+                      <div class="container">
+                        <h5>Lüks Avtomobil icarəyə götürmək istəyirsən? </h5>
+                        <p>O zaman doğru məkandasan.</p>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
                     <img src="./assets/img/home img 2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Lüks Avtomobil icarəyə götürmək istəyirsən? </h5>
-                      <p>O zaman doğru məkandasan.</p>
+                      <div class="container ">
+                        <h5>Lüks Avtomobil icarəyə götürmək istəyirsən? </h5>
+                        <p>O zaman doğru məkandasan.</p>
+                      </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="./assets/img/home img 3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Lüks Avtomobil icarəyə götürmək istəyirsən? </h5>
-                      <p>O zaman doğru məkandasan.</p>
+                      <div class="container">
+                        <h5>Lüks Avtomobil icarəyə götürmək istəyirsən? </h5>
+                        <p>O zaman doğru məkandasan.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -94,14 +94,9 @@
               </div>
            
         </section>
-        <!-- <section class="home-section2">
-            <div class="container">
-                <div class="section2-teamTitle">
-                <h3>Peşəkar İşcilərimiz</h3>
-                <span>İşcilərimiz ilə tanış ol</span>
-                </div>
-            </div>
-        </section> -->
+   
+        
+       
         <section class="home-section3">
             <div class="container">
                 <div class="section3-title">
@@ -115,13 +110,13 @@
                         <img src="./assets/img/h1-img-10.png" alt="">
                      </div>
                       <div class="card-title">
-                      <h1>Ekonom</h1>
+                      <h1>Econom</h1>
                       <h2>40 <span>AZN</span></h2>
                       <p>-dən başlayan qiymətlər</p>
                      </div>
                    </div>
                    <div class="card-right">
-                   <button class="button">Daxil ol</button>
+                    <a href="./car-class.html" class="btn btn-danger" id="econom-btn">Daxil ol</a>
                    </div>
                   </div>
                   <div class="col-3 card-2">
@@ -130,13 +125,14 @@
                         <img src="./assets/img/h1-img-11.png" alt="">
                      </div>
                       <div class="card-title">
-                      <h1>Komfort</h1>
+                      <h1>Comfort</h1>
                       <h2>60 <span>AZN</span></h2>
                       <p>-dən başlayan qiymətlər</p>
                      </div>
                    </div>
                    <div class="card-right">
-                   <button>Daxil ol</button>
+                    <a href="./car-class.html" class="btn btn-danger" id="comfort-btn">Daxil ol</a>
+
                    </div>
                   </div>
                   <div class="col-3 card-3">
@@ -151,7 +147,8 @@
                      </div>
                    </div>
                    <div class="card-right">
-                   <button>Daxil ol</button>
+                    <a href="./car-class.html" class="btn btn-danger" id="suv-btn">Daxil ol</a>
+
                    </div>
                   </div>
                   <div class="col-3 card-4">
@@ -166,21 +163,38 @@
                      </div>
                    </div>
                    <div class="card-right">
-                   <button>Daxil ol</button>
+                    <a href="./car-class.html" class="btn btn-danger" id="Business-btn">Daxil ol</a>
+
                    </div>
                   </div>
                 </div>
             </div>
         </section>
+       
+            
+      <section class="home-section2">
+        <div class="home-section2-text container">
+          <h3>Popular Arenda Maşınları</h3>
+          <a href="./cars.html"> <span> / </span>  Bütün maşınlara keçid et </a>
+        </div>
+        <div class="home-section2-card" >
+          <div class="row p-5 m-0">
+            <div class="owl-slider">
+             <div id="carousel" class="owl-carousel ">
+            
+             </div> 
+            </div> 
+          </div> 
+        </div> 
+      </section> 
+        
+       
+       
         <section class="home-section4">
           <div class="container">
             <div class="section4-top">
               <div class="section4-img">
                 <img src="./assets/img/content-bottom-car.png" alt="">
-                <!-- <div class="section4-text "> -->
-                  <!-- <span>Modelinizi seçin<h1>İcarəyə 15% endirim qazanın!</h1></span>   -->
-                  
-                <!-- </div>  -->
               </div>
             </div>
             <div class="section4-bottom">
@@ -223,7 +237,7 @@
          <div class="container">
             <div class="row">
               <div class="footer-left col-4">
-                <span>MamedovDrive</span>
+                <span>MamedovRentaCar</span>
                 <a href="tel:+994552965450"><h1 style="font-weight: 800;">Çağrı Mərkəzi :(+994) 055 296 54 50</h1></a>
               </div>
               <div class="footer-com col-4">
@@ -241,9 +255,17 @@
             </div>
          </div>
         </footer>
+        <hr>
+      <div class="container">
+        <p style="color: white;text-align: center; font-size: 18px;">Created & Designed by Leila Nazarli</p>
+      </div>
     </div>
     
-    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/common.js"></script>
     <script src="./assets/js/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

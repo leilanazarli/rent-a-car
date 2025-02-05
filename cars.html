@@ -13,12 +13,11 @@
     <title>MamedovRentACar</title>
 </head>
 <body>
-    <div class="aboutus">
+    <div class="cars">
       <header>
         <div class="header-top">
             <div class="container">
                 <div class="header-top-left logo">
-                <!-- <img src="./assets/img/logo.jpeg" alt="logo"> -->
                 <span>MamedovRentaCar</span>
                 </div>
                 <div class="header-top-right">
@@ -32,39 +31,84 @@
         <div class="header-bottom">
          <div class="container">
           <div class=" logos" style="font-size: 30px; color: white;display: none;">
-            <!-- <img src="./assets/img/logo.jpeg" alt="logo"> -->
             <span>MamedovRentaCar</span>
             </div>
              <div class="header-bottom-left">
                <nav>
                 <ul>
                     <li><a href="./home.html" >əsas səhifə</a></li>
-                    <li><a href="./cars.html">Maşınlar</a></li>
+                    <li><a href="./cars.html"style="color: red;">Maşınlar</a></li>
                     <li><a href="./favorites.html">Favorilər</a></li>
                     <li><a href="./service.html">Xidmətlər</a></li>
-                    <li><a href="./aboutus.html" style="color: red;">Haqqımızda</a></li>
+                    <li><a href="./aboutus.html">Haqqımızda</a></li>
                     <li><a href="./contact.html">əlaqə</a></li>
+                  
                 </ul>
                </nav>
              </div>
-         
+              
          </div>
         </div>
     </header>
-        <section class="aboutus-section1">
-            <div class="container">
-                <div class="logo">
-                    <img src="./assets/img/logo fixed.jpg" alt="">
+        <section class="cars-section1">
+            <div class="container ">
+              <div class="cars-section1-top row">
+                   <div class="siralama-price col-6">
+                    <i class="fa-solid fa-arrow-up"></i>
+                      <i class="fa-solid fa-arrow-down"></i>
+                      <span>Sıralama</span>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                   </div>
+                   <div class=" cars-top col-6">
+                    <input type="text" placeholder="Search..." id="searchInput">
+                    <div class="search"></div>
+                   </div>
+              </div>
+              <div class="row cards g-5 cars-section1-bottom" style="gap: 20px;justify-content: center;" >
+                <!-- <div class="card col-4">
+                  <div class="card-img">
+                    <a href=""><img src="./assets/img/home img 1.jpg" class="car-img" ></a>
+                    <p class="cars-years">2020</p>
+                    <button id="heart" class="btn btn-dark" style="border-radius: 50%;"><i class="fa-regular fa-heart"></i></button>
+                  </div> 
+                  <div class="card-body">
+                    <div class="card-title">
+                      <a href="" class="car-title-name">Ford Mustang 2016</a>
                     </div>
-                    <p> <a href="" style="color: red; font-size: 30px;">Rent A Car şirkətimiz haqqında</a> <br>
-                Mamedov RentACar şirkəti olaraq bizim missiyamız  şəhər ətrafında və hətta ölkənin bütün rayon və şəhərlərinə gediş-gəlişi asanlaşdıran rahat və etibarlı avtomobil icarəsi xidmətləri təqdim etməkdir.
-                Biz idman üslublu kompaktlardan tutmuş komfort SUV avtomobillərinə qədər istənilən ehtiyaca uyğun geniş çeşiddə avtomobillər təklif etməkdən qürur duyuruq.
-                Komandamız əla müştəri xidməti göstərməyə və hər bir icarə təcrübəsinin rahat və stresssiz olmasını təmin etməyə sadiqdir.Biz 5 ildən artıqdır ki, Gəncədə fiziki şəxslərə, eləcə də korporativlərə ən yaxşı avtomobil icarəsi təkliflərini təklif edirik . 
-                MamedovRentACar ilə siz münasib qiymətə yüksək keyfiyyətli avtomobil icarəsi əldə etdiyinizə əmin ola bilərsiniz.Növbəti avtomobil icarənizi bu gün bizimlə bron edin!</p>
+                    <div class="card-cars-about row">
+                      <div class="col-3">
+                        <img src="./assets/img/seat.png" alt="" style="filter: grayscale(100%);"> 
+                        <span class="passenger">4</span>
+                      </div>
+                      <div class="col-3">
+                        <img src="./assets/img/car-door (1).png" alt="">
+                        <span class="car-door">2</span>
+                      </div>
+                      <div class="col-3">
+                        <img src="./assets/img/motor.png" alt="">
+                        <span class="gear-stick">1.4</span>
+                      </div>
+                      <div class="col-3">
+                        <img src="./assets/img/transport.png" alt="">
+                        <span class="car-type">SUV</span>
+                      </div>
+                    </div>
+                    <div class="card-cars-price">
+                      <button class="btn btn-danger" style="border-radius: 55px;" >Rent Now</button>
+                      <p><span class="car-price">200</span> ₼ /günü</p>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
             </div>
         </section>
         <hr>
-        <footer>
+        <footer >
          <div class="container">
             <div class="row">
               <div class="footer-left col-4">
@@ -92,8 +136,9 @@
       </div>
     </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/common.js"></script>
-    <script src="./assets/js/aboutus.js"></script>
+    <script src="./assets/js/cars.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
