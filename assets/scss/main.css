@@ -246,38 +246,108 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   height: max-content;
 }
 .aboutus .aboutus-section1 {
+  padding-top: 120px;
+}
+.aboutus .aboutus-section1 img {
+  width: 100%;
+}
+.aboutus .aboutus-section1 h1 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 55%;
+  color: white;
+  font-size: 40px;
+}
+.aboutus .aboutus-section2 {
   padding-top: 150px;
   height: 550px;
   display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 190px;
 }
-.aboutus .aboutus-section1 .container {
+.aboutus .aboutus-section2 .container {
   display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.aboutus .aboutus-section2 .container h2 {
+  color: white;
+  font-size: 45px;
+  font-weight: 400;
+}
+.aboutus .aboutus-section2 .container p {
+  color: red;
+  font-size: 25px;
+  font-weight: 300;
+}
+.aboutus .aboutus-section2 .container .faq-container {
+  width: 80%;
+  margin: auto;
+}
+.aboutus .aboutus-section2 .container .faq-container .faq {
+  border-bottom: 1px solid #ddd;
+  padding: 30px 0;
+  color: white;
+}
+.aboutus .aboutus-section2 .container .faq-container .faq .question {
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.aboutus .aboutus-section1 .container .logo img {
-  width: 200px;
-}
-.aboutus .aboutus-section1 .container p {
+.aboutus .aboutus-section2 .container .faq-container .faq .toggle-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
   color: white;
+  cursor: pointer;
+  transition: transform 0.03s ease;
+}
+.aboutus .aboutus-section2 .container .faq-container .faq .answer {
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  line-height: 30px;
+  max-height: 0;
+  padding: 10px 0;
+  overflow: hidden;
+  transition: max-height 0.5scubic -bezier(0.42, 0, 0, -0.01), padding 0.3slinear;
+  padding: 0;
+}
+.aboutus .aboutus-section3 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 0;
+}
+.aboutus .aboutus-section3 .section3-img {
+  display: flex;
+  gap: 10px;
+}
+.aboutus .aboutus-section3 .section3-img .img2 {
+  width: 350px;
+}
+.aboutus .aboutus-section3 .section3-img .img1 {
+  width: 300px;
+}
+.aboutus .aboutus-section3 .right p {
+  font-size: 18px;
+  line-height: 1.3;
+  width: 80%;
+  font-weight: 100;
 }
 
 .contact {
   background-color: rgb(11, 19, 21);
 }
 .contact .contact-section1 {
-  padding-top: 100px;
+  padding-top: 120px;
   width: 100%;
 }
 .contact .contact-section1 img {
-  width: 100%;
-}
-.contact .contact-section2 {
-  width: 100%;
-}
-.contact .contact-section2 iframe {
   width: 100%;
 }
 .contact .contact-section3 {
@@ -292,8 +362,12 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
-.contact .contact-section3 .container form {
+.contact .contact-section3 .container .contact-section1-left {
+  width: 100%;
+}
+.contact .contact-section3 .container .contact-section3-right form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -301,12 +375,12 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   width: 450px;
   display: flex;
 }
-.contact .contact-section3 .container form h1 {
+.contact .contact-section3 .container .contact-section3-right form h1 {
   color: white;
   font-size: 45px;
   text-align: center;
 }
-.contact .contact-section3 .container form textarea {
+.contact .contact-section3 .container .contact-section3-right form textarea {
   width: 450px;
   background-color: white;
 }
@@ -316,7 +390,8 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 50px 0;
+  margin: 0;
 }
 .contact .contact-section4 .left {
   width: 50%;
@@ -373,6 +448,19 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
 .home .home-section2 {
   padding: 90px 0;
 }
+.home .home-section2 .home-section2-card .row .owl-slider .owl-carousel .owl-nav {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.home .home-section2 .home-section2-card .row .owl-slider .owl-carousel .owl-nav button.owl-next, .home .home-section2 .home-section2-card .row .owl-slider .owl-carousel .owl-nav button.owl-prev, .home .home-section2 .home-section2-card .row .owl-slider .owl-carousel .owl-nav button.owl-dot {
+  background: 0 0;
+  color: red !important;
+  border: none;
+  padding: 0 !important;
+  font-size: 55px;
+  text-align: center !important;
+}
 .home .home-section2 .home-section2-card .row .owl-slider .owl-carousel .item {
   color: white;
   /* Remove default margin */
@@ -399,12 +487,13 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
 .home .home-section2 .home-section2-card .row .owl-slider .owl-carousel .item .card {
   display: grid;
   place-items: center;
-  width: 280px;
+  width: 320px;
   max-width: 21.875rem;
   height: 400px;
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  border-color: black;
 }
 .home .home-section2 .home-section2-card .row .owl-slider .owl-carousel .item .card:hover {
   border-radius: 0.625rem;
@@ -416,7 +505,8 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
 .home .home-section2 .home-section2-card .row .owl-slider .owl-carousel .item .card__background {
   -o-object-fit: fill;
      object-fit: fill; /* Şəkil kartın ölçüsünə uyğunlaşdırılır */
-  height: 50%; /* Kartın bütün hündürlüyünü əhatə edir */
+  width: 320px; /* Kartın bütün enini əhatə edir */
+  height: 400px; /* Kartın bütün hündürlüyünü əhatə edir */
   border-radius: 0.625rem; /* Kartın yuvarlaq küncləri ilə uyğunlaşdırılır */
   transition: transform 0.3s ease-in; /* Hover effekti üçün keçid */
 }
@@ -569,7 +659,7 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   align-items: center;
 }
 .home .home-section3 .container .row .card-1 .card-img img, .home .home-section3 .container .row .card-2 .card-img img, .home .home-section3 .container .row .card-3 .card-img img, .home .home-section3 .container .row .card-4 .card-img img {
-  height: 120px;
+  height: 150px;
 }
 .home .home-section3 .container .row .card-1 .card-left .card-title, .home .home-section3 .container .row .card-2 .card-left .card-title, .home .home-section3 .container .row .card-3 .card-left .card-title, .home .home-section3 .container .row .card-4 .card-left .card-title {
   display: flex;
@@ -592,26 +682,54 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
 .home .home-section3 .container .row .card-1 .card-right, .home .home-section3 .container .row .card-2 .card-right, .home .home-section3 .container .row .card-3 .card-right, .home .home-section3 .container .row .card-4 .card-right {
   padding-top: 10px;
 }
-.home .home-section4 .container .section4-top .section4-img img {
+.home .home-section4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 400px;
+  overflow: hidden;
 }
-.home .home-section4 .container .section4-bottom {
+.home .home-section4 .image-container {
+  width: 100%;
+  height: 100%;
+}
+.home .home-section4 .image-container .rental-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .home-section4 .content {
+  position: absolute;
+  color: white;
+  text-align: left;
+  left: 5%;
+  bottom: 30%;
+}
+.home .home-section4 .content h2 {
+  font-style: italic;
+  font-size: 35px;
+}
+.home .home-section4 .content p {
+  font-size: 40px;
+}
+.home .home-section5 .container .section5-bottom {
   padding: 50px 0;
 }
-.home .home-section4 .container .section4-bottom .row .col-4 {
+.home .home-section5 .container .section5-bottom .row .col-lg-4 {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.home .home-section4 .container .section4-bottom .row .col-4 img {
+.home .home-section5 .container .section5-bottom .row .col-lg-4 img {
   color: red;
 }
-.home .home-section4 .container .section4-bottom .row .col-4 .card1-text a, .home .home-section4 .container .section4-bottom .row .col-4 .card2-text a, .home .home-section4 .container .section4-bottom .row .col-4 .card3-text a {
+.home .home-section5 .container .section5-bottom .row .col-lg-4 .card-text a {
   color: white;
 }
-.home .home-section4 .container .section4-bottom .row .col-4 .card1-text a span, .home .home-section4 .container .section4-bottom .row .col-4 .card2-text a span, .home .home-section4 .container .section4-bottom .row .col-4 .card3-text a span {
+.home .home-section5 .container .section5-bottom .row .col-lg-4 .card-text a span {
   padding-top: 20px;
   color: white;
 }
@@ -643,6 +761,10 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
 .favorites .favorites-section1 .favorites-text a i:hover {
   padding-left: 20px;
 }
+.favorites .favorites-section1 .row {
+  gap: 20px;
+  justify-content: center;
+}
 .favorites .favorites-section1 .row .card {
   overflow: hidden;
   padding: 0;
@@ -661,7 +783,7 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
 .favorites .favorites-section1 .row .card .card-img .car-img {
   transition: transform 0.3s ease, z-index 0s;
   z-index: 1;
-  height: 350px;
+  height: 250px;
   width: 100%;
 }
 .favorites .favorites-section1 .row .card .card-img .cars-years {
@@ -681,11 +803,11 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
 .favorites .favorites-section1 .row .card .card-body {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 .favorites .favorites-section1 .row .card .card-body .card-title a {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 .favorites .favorites-section1 .row .card .card-body .card-cars-about .col-3 {
   display: flex;
@@ -708,7 +830,7 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   color: black; /* Span yazısının ölçüsünü də burada tənzimləyə bilərsiniz */
 }
 .favorites .favorites-section1 .row .card .card-body .card-cars-price {
-  padding-top: 25px;
+  padding-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -724,151 +846,92 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   background-color: rgb(11, 19, 21);
 }
 .cars .cars-section1 {
-  padding-top: 150px;
-}
-.cars .cars-section1 .container .cars-section1-top {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
-.cars .cars-section1 .container .cars-section1-top .cars-top {
   position: relative;
-  padding-bottom: 100px;
-  width: 15px;
-  height: 20px;
+  width: 100%;
+  padding-top: 70px;
+  text-align: center;
 }
-.cars .cars-section1 .container .cars-section1-top .cars-top .search {
+.cars .cars-section1 img {
+  width: 100%;
+  height: auto;
+}
+.cars .cars-section1 .overlay {
   position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 33px;
-  height: 33px;
-  background: crimson;
-  border-radius: 50%;
-  transition: all 1s;
-  z-index: 4;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
 }
-.cars .cars-section1 .container .cars-section1-top .cars-top .search:hover {
-  cursor: pointer;
+.cars .cars-section1 .overlay h1 {
+  font-size: 60px;
+  font-weight: bold;
 }
-.cars .cars-section1 .container .cars-section1-top .cars-top .search::before {
-  content: "";
-  position: absolute;
-  margin: auto;
-  top: 14px;
-  right: 0;
-  bottom: 0;
-  left: 14px;
-  width: 9px;
-  height: 1.5px;
-  background: white;
-  transform: rotate(45deg);
-  transition: all 0.5s;
+.cars .cars-section1 .overlay p {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
-.cars .cars-section1 .container .cars-section1-top .cars-top .search::after {
-  content: "";
-  position: absolute;
-  margin: auto;
-  top: -2px;
-  right: 0;
-  bottom: 0;
-  left: -2px;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  border: 2px solid white;
-  transition: all 0.5s;
+.cars .cars-section2 {
+  padding-top: 50px;
 }
-.cars .cars-section1 .container .cars-section1-top .cars-top input {
-  font-family: "Inconsolata", monospace;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0px;
-  width: 20px;
-  height: 30px;
-  outline: none;
+.cars .cars-section2 .container {
+  display: flex;
+  flex-direction: column;
+}
+.cars .cars-section2 .container .cars-section2-top {
+  padding-bottom: 80px;
+}
+.cars .cars-section2 .container .cars-section2-top .search-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.cars .cars-section2 .container .cars-section2-top .search-box select, .cars .cars-section2 .container .cars-section2-top .search-box input, .cars .cars-section2 .container .cars-section2-top .search-box button {
+  padding: 10px !important;
+  font-size: 16px;
   border: none;
-  background: crimson;
-  color: white;
-  text-shadow: 0 0 10px crimson;
-  padding: 0 80px 0 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 25px 0 crimson, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
-  transition: all 1s;
-  opacity: 0;
-  z-index: 5;
-  font-weight: bolder;
-  letter-spacing: 0.1em;
+  border-radius: 5px;
+  font-style: italic;
 }
-.cars .cars-section1 .container .cars-section1-top .cars-top input:hover {
+.cars .cars-section2 .container .cars-section2-top .search-box select, .cars .cars-section2 .container .cars-section2-top .search-box .option {
+  color: gray;
+}
+.cars .cars-section2 .container .cars-section2-top .search-box option {
+  color: black;
+}
+.cars .cars-section2 .container .cars-section2-top .search-box button {
+  background: red;
   cursor: pointer;
+  font-weight: bold;
 }
-.cars .cars-section1 .container .cars-section1-top .cars-top input:focus {
-  width: 200px;
-  opacity: 1;
-  cursor: text;
+.cars .cars-section2 .container .row {
+  gap: 20px;
+  justify-content: center;
 }
-.cars .cars-section1 .container .cars-section1-top .cars-top input:focus ~ .search {
-  right: -360px;
-  background: #151515;
-  z-index: 6;
-}
-.cars .cars-section1 .container .cars-section1-top .cars-top input:focus ~ .search::before {
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 1px;
-}
-.cars .cars-section1 .container .cars-section1-top .cars-top input:focus ~ .search::after {
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 1px;
-  border: none;
-  background: white;
-  border-radius: 0%;
-  transform: rotate(-45deg);
-}
-.cars .cars-section1 .container .cars-section1-top .cars-top input::-moz-placeholder {
-  color: white;
-  opacity: 0.5;
-  font-weight: bolder;
-}
-.cars .cars-section1 .container .cars-section1-top .cars-top input::placeholder {
-  color: white;
-  opacity: 0.5;
-  font-weight: bolder;
-}
-.cars .cars-section1 .container .row .card {
+.cars .cars-section2 .container .row .card {
   overflow: hidden;
   padding: 0;
+  width: 256px;
   background-color: rgb(34, 33, 33);
 }
-.cars .cars-section1 .container .row .card .card-img {
+.cars .cars-section2 .container .row .card .card-img {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
   overflow: hidden;
 }
-.cars .cars-section1 .container .row .card .card-img:hover .car-img {
+.cars .cars-section2 .container .row .card .card-img:hover .car-img {
   transform: scale(1.1);
   z-index: 2;
 }
-.cars .cars-section1 .container .row .card .card-img .car-img {
+.cars .cars-section2 .container .row .card .card-img .car-img {
   transition: transform 0.3s ease, z-index 0s;
   z-index: 1;
   height: 250px;
   width: 100%;
 }
-.cars .cars-section1 .container .row .card .card-img .cars-years {
+.cars .cars-section2 .container .row .card .card-img .cars-years {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -877,21 +940,21 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   padding: 5px 10px;
   border-radius: 55px;
 }
-.cars .cars-section1 .container .row .card .card-img #heart {
+.cars .cars-section2 .container .row .card .card-img #heart {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-.cars .cars-section1 .container .row .card .card-body {
+.cars .cars-section2 .container .row .card .card-body {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.cars .cars-section1 .container .row .card .card-body .card-title a {
+.cars .cars-section2 .container .row .card .card-body .card-title a {
   color: white;
   font-size: 20px;
 }
-.cars .cars-section1 .container .row .card .card-body .card-cars-about .col-3 {
+.cars .cars-section2 .container .row .card .card-body .card-cars-about .col-3 {
   display: flex;
   width: auto;
   align-items: center;
@@ -903,25 +966,48 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   border-radius: 55px;
   margin-right: 10px;
 }
-.cars .cars-section1 .container .row .card .card-body .card-cars-about .col-3 img {
+.cars .cars-section2 .container .row .card .card-body .card-cars-about .col-3 img {
   width: 20px; /* Şəklin ölçüsünü burada tənzimləyə bilərsiniz */
   height: auto;
 }
-.cars .cars-section1 .container .row .card .card-body .card-cars-about .col-3 span {
+.cars .cars-section2 .container .row .card .card-body .card-cars-about .col-3 span {
   font-size: 14px;
   color: black; /* Span yazısının ölçüsünü də burada tənzimləyə bilərsiniz */
 }
-.cars .cars-section1 .container .row .card .card-body .card-cars-price {
+.cars .cars-section2 .container .row .card .card-body .card-cars-price {
   padding-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.cars .cars-section1 .container .row .card .card-body .card-cars-price p {
+.cars .cars-section2 .container .row .card .card-body .card-cars-price p {
   color: white;
 }
-.cars .cars-section1 .container .row .card .card-body .card-cars-price p span {
+.cars .cars-section2 .container .row .card .card-body .card-cars-price p span {
   font-size: 25px;
+}
+.cars .cars-section2 .container .pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cars .cars-section2 .container .pagination button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cars .cars-section2 .container .pagination button:disabled {
+  background-color: grey;
+}
+.cars .cars-section2 .container .pagination #pageNumber {
+  color: white;
+  font-size: 30px;
+  padding: 0 20px;
 }
 
 .login {
@@ -1233,6 +1319,83 @@ header .header-bottom .container .header-bottom-left nav ul li a:hover {
   color: white;
   font-family: "Times New Roman", Times, serif;
   line-height: 30px;
+}
+.service .service-section2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 150px;
+}
+.service .service-section2 .images {
+  display: flex;
+  gap: 10px;
+}
+.service .service-section2 .images img {
+  width: 300px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.service .service-section2 .service-details {
+  flex: 1;
+}
+.service .service-section2 .service-details .service-percent {
+  display: flex;
+  justify-content: space-between;
+}
+.service .service-section2 .service-details .service-percent span {
+  color: white;
+}
+.service .service-section2 .service-details h2 {
+  font-size: 35px;
+  color: red;
+  padding-bottom: 10px;
+}
+.service .service-section2 .service-details p {
+  color: white;
+  font-size: 20px;
+}
+.service .service-section2 .service-details .bar {
+  background: #ddd;
+  height: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  position: relative;
+  margin: 20px 0;
+}
+.service .service-section2 .service-details .bar .fill {
+  background: rgb(99, 9, 9);
+  height: 10px;
+  border-radius: 5px;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+.service .service-section3 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.service .service-section3 img {
+  width: 150px;
+  height: 100px;
+}
+.service .service-section4 .container {
+  padding: 90px 0;
+}
+.service .service-section4 .container .row .col-lg-4 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.service .service-section4 .container .row .col-lg-4 img {
+  color: red;
+}
+.service .service-section4 .container .row .col-lg-4 .card-text a {
+  color: white;
+}
+.service .service-section4 .container .row .col-lg-4 .card-text a span {
+  padding-top: 20px;
+  color: white;
 }
 
 .car-about {

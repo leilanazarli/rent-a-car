@@ -23,4 +23,86 @@
             }
         }
     }
+    .service-section2 {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-top: 150px;
+        .images {
+            display: flex;
+            gap: 10px;
+             img {
+                width: 300px;
+                height: 450px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+        .service-details {
+            flex: 1;
+            .service-percent{
+            display: flex;
+            justify-content: space-between;
+            span{
+            color: white;
+            }
+            }
+            h2{
+                font-size: 35px;
+                color: red;
+                padding-bottom: 10px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
+            .bar {
+                background: #ddd;
+                height: 10px;
+                border-radius: 5px;
+                margin: 5px 0;
+                position: relative;
+                margin: 20px 0;
+                .fill {
+                    background: rgb(99, 9, 9);
+                    height: 10px;
+                    border-radius: 5px;
+                    width: 0;
+                    transition: width 1s ease-in-out;
+                }
+            }
+        }
+    }
+    .service-section3{
+            padding-top: 150px ;
+            padding-bottom: 150px ;
+         img {
+         width: 150px;
+            height: 100px;
+        }
+    }
+    .service-section4{
+        .container{
+        padding: 90px 0;
+        .row{
+            .col-lg-4{
+            display: flex ;
+            gap: 20px;
+            align-items: center;
+            img{
+                color: red;
+            }
+            .card-text{
+                a{
+                        color: white;
+                        span{
+                            padding-top:20px;  
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 }

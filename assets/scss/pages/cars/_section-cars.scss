@@ -1,138 +1,83 @@
 .cars{
 background-color: rgb(11, 19, 21);
-    .cars-section1{
-    padding-top: 150px;
-        .container{
-          .cars-section1-top{
-            display: flex;
-            width: 100%;
-            justify-content: space-around;
-            align-items: center;
-            .cars-top{
-                  position: relative;
-                //   margin: auto;
-                //   top: 0;
-                //   left: 200px;
-                //   right: 100px;
-                //   bottom: 0;
-                padding-bottom: 100px;
-                  width: 15px;
-                  height: 20px;
-                  .search {
-                    position: absolute;
-                    margin: auto;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    width: 33px;
-                    height: 33px;
-                    background: crimson;
-                    border-radius: 50%;
-                    transition: all 1s;
-                    z-index: 4;
-                    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
-                    // box-shadow: 0 0 25px 0 crimson;
-                    &:hover {
-                      cursor: pointer;
-                    }
-                    &::before {
-                      content: "";
-                      position: absolute;
-                      margin: auto;
-                      top: 14px;
-                      right: 0;
-                      bottom: 0;
-                      left: 14px;
-                      width: 9px;
-                      height: 1.5px;
-                      background: white;
-                      transform: rotate(45deg);
-                      transition: all .5s;
-                    }
-                    &::after {
-                      content: "";
-                      position: absolute;
-                      margin: auto;
-                      top: -2px;
-                      right: 0;
-                      bottom: 0;
-                      left: -2px;
-                      width: 13px;
-                      height: 13px;
-                      border-radius: 50%;
-                      border: 2px solid white;
-                      transition: all .5s;
-                    }
-                  }
-                  input {
-                    font-family: 'Inconsolata', monospace;
-                    position: absolute;
-                    margin: auto;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0px;
-                    width: 20px;
-                    height: 30px;
-                    outline: none;
-                    border: none;
-                    // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-                    background: crimson;
-                    color: white;
-                    text-shadow: 0 0 10px crimson;
-                    padding: 0 80px 0 20px;
-                    border-radius: 20px;
-                    box-shadow: 0 0 25px 0 crimson,
-                                0 20px 25px 0 rgba(0, 0, 0, 0.2);
-                    // box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
-                    transition: all 1s;
-                    opacity: 0;
-                    z-index: 5;
-                    font-weight: bolder;
-                    letter-spacing: 0.1em;
-                    &:hover {
-                      cursor: pointer;
-                    }
-                    &:focus {
-                      width: 200px;
-                      opacity: 1;
-                      cursor: text;
-                    }
-                    &:focus ~ .search {
-                      right: -360px;
-                      background: #151515;
-                      z-index: 6;
-                      &::before {
-                        top: 0;
-                        left: 0;
-                        width: 15px;
-                        height: 1px;
-                      }
-                      &::after {
-                        top: 0;
-                        left: 0;
-                        width: 15px;
-                        height: 1px;
-                        border: none;
-                        background: white;
-                        border-radius: 0%;
-                        transform: rotate(-45deg);
-                      }
-                    }
-                    &::placeholder {
-                      color: white;
-                      opacity: 0.5;
-                      font-weight: bolder;
-                    }
-                  }
-                }
-          
+ 
+  
+  .cars-section1 {
+      position: relative;
+      width: 100%;
+      // height: auto;
+      padding-top: 70px;
+      text-align: center;
+       img {
+          width: 100%;
+          height: auto;
+      }
+      .overlay {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          text-align: center;
+           h1 {
+              font-size: 60px;
+              font-weight: bold;
           }
+          p {
+              font-size: 20px;
+              margin-bottom: 20px;
+          }
+      }
+      
+  }
+  
+ 
+  
+    .cars-section2{
+    padding-top: 50px;
+    .container{
+    display: flex;
+    flex-direction: column;
+      .cars-section2-top{
+        padding-bottom: 80px;
+        .search-box {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+            select,  input,  button {
+                padding: 10px !important;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                font-style: italic;
+            }
+            select, .option{
+              color: gray;
+              // font-style: italic;
+            }
+            option{
+            color: black;
+          //   &:focus , &:checked, &:hover {
+          //     background-color: blue !important;
+          //     color: white !important;
+          //  }
+            }
+             button {
+                background: red;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+          
+         }
             .row{
+              gap: 20px;
+              justify-content: center;
                 .card{
                     overflow: hidden;
                     padding: 0;
+                    width: 256px;
                     background-color: rgb(34, 33, 33);
                     .card-img {
                     object-fit: cover;
@@ -216,11 +161,31 @@ background-color: rgb(11, 19, 21);
                          
                       }
                 }
-                
-            
+             }
+       }
+       .pagination {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+       align-items: center;
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            &:disabled {
+                background-color: grey;
             }
-       
         }
+        #pageNumber{
+          color: white;
+          font-size: 30px;
+          padding: 0 20px;
+        }
+    }
     }
 }
 }

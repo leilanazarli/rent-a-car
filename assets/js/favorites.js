@@ -15,7 +15,7 @@ function createfav() {
 
     favoriteData.forEach(element => {
         row.innerHTML += `
-             <div class="card col-4">
+             <div class="card col-3" style="width=:256px;">
                     <div class="card-img">
                       <a href=""><img src="${element.car_imgvalue}" class="car-img" ></a>
                       <p class="cars-years">${element.car_years}</p>

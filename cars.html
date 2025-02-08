@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/scss/main.css">
-    <title>MamedovRentACar</title>
+    <title>Mamedov Rent A Car</title>
 </head>
 <body>
     <div class="cars">
@@ -18,7 +18,7 @@
         <div class="header-top">
             <div class="container">
                 <div class="header-top-left logo">
-                <span>MamedovRentaCar</span>
+                <span>Mamedov Rent A Car</span>
                 </div>
                 <div class="header-top-right">
                     <a href="tel:+994 055 296 54 50"><i class="fa-solid fa-phone"></i><span >+994 055 296 54 50</span></a>
@@ -31,7 +31,7 @@
         <div class="header-bottom">
          <div class="container">
           <div class=" logos" style="font-size: 30px; color: white;display: none;">
-            <span>MamedovRentaCar</span>
+            <span>Mamedov Rent A Car</span>
             </div>
              <div class="header-bottom-left">
                <nav>
@@ -51,25 +51,61 @@
         </div>
     </header>
         <section class="cars-section1">
+          <!-- <img src="./assets/img/vehicle_on_fleet_banner.png" alt="">
+          <div class="container">
+                    <div class="cars-section1-top row">
+                      <div class="siralama-price col-6">
+                       <i class="fa-solid fa-arrow-up"></i>
+                         <i class="fa-solid fa-arrow-down"></i>
+                         <span>Sıralama</span>
+                       <select class="form-select" aria-label="Default select example">
+                         <option selected>Open this select menu</option>
+                         <option value="1">One</option>
+                         <option value="2">Two</option>
+                         <option value="3">Three</option>
+                       </select>
+                      </div>
+                      <div class=" cars-top col-6">
+                       <input type="text" placeholder="Search..." id="searchInput">
+                       <div class="search"></div>
+                      </div>
+                        </div>
+                         </div>
+        </section> -->
+        
+        <section class="cars-section1">
+          <img src="./assets/img/vehicle_on_fleet_banner.png" alt="Luxury and Comfort">
+          <div class="overlay">
+              <p>TRANSPORTATION</p>
+              <h1>Luxury and Comfort</h1>
+              
+          </div>
+      </section>
+      
+      
+        <section class="cars-section2">
             <div class="container ">
-              <div class="cars-section1-top row">
-                   <div class="siralama-price col-6">
-                    <i class="fa-solid fa-arrow-up"></i>
-                      <i class="fa-solid fa-arrow-down"></i>
-                      <span>Sıralama</span>
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                   </div>
-                   <div class=" cars-top col-6">
-                    <input type="text" placeholder="Search..." id="searchInput">
-                    <div class="search"></div>
-                   </div>
-              </div>
-              <div class="row cards g-5 cars-section1-bottom" style="gap: 20px;justify-content: center;" >
+             <div class="cars-section2-top">
+              <div class="search-box">
+                <select id="sortSelect" >
+                <option value="all">Qiymət</option>
+                  <option value="asc">Azdan çoxa</option>
+                  <option value="desc">Çoxdan az</option>
+              </select>
+              
+                <select id="typeFilter" onchange="filterCars()">
+                    <option selected class="option" value="all">Choose Car Type</option>
+                    <option value="Econom"> ECONOM</option>
+                    <option value="Comfort"> COMFORT</option>
+                    <option value="SUV"> SUV</option>
+                    <option value="Business">BUSINESS </option>
+                    
+                </select>
+                <input type="text"  id="searchInput" placeholder="🔍 Axtar..." >
+                <button class="btn btn-danger findbtn">Axtarış et</button>
+            </div>
+             </div>
+              <div class="row cards  cars-section1-bottom" id="carContainer"  >
                 <!-- <div class="card col-4">
                   <div class="card-img">
                     <a href=""><img src="./assets/img/home img 1.jpg" class="car-img" ></a>
@@ -104,7 +140,14 @@
                     </div>
                   </div>
                 </div> -->
+                
               </div>
+              <div class="pagination">
+                <button id="prevBtn" onclick="changePage(-1)">Previous</button>
+                <span id="pageNumber">1</span>
+                <button id="nextBtn" onclick="changePage(1)">Next</button>
+            </div>
+              
             </div>
         </section>
         <hr>
@@ -112,7 +155,7 @@
          <div class="container">
             <div class="row">
               <div class="footer-left col-4">
-                <span>MamedovRentaCar</span>
+                <span>Mamedov Rent A Car</span>
                 <a href="tel:+994552965450"><h1 style="font-weight: 800;">Çağrı Mərkəzi :(+994) 055 296 54 50</h1></a>
               </div>
               <div class="footer-com col-4">
